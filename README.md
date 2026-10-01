@@ -19,21 +19,20 @@ O projeto foi desenvolvido como atividade prática da disciplina de APIs e Consu
 ### Criação de banco de dados "almoxarifado":
 Nesta etapa foi criado o banco de dados almoxarifado, que será responsável por armazenar todas as informações referentes às peças de reposição cadastradas pela API. Esse banco servirá como base para todas as operações de cadastro, consulta, atualização e exclusão de dados.
 
-![alt text](imagens\criando_banco_de_dados.png)
-
-
-
+![Criação do banco de dados](imagens/criando_banco_de_dados.png)
 
 
 ### Banco de Dados criados:
 Após a criação, é possível visualizar o banco almoxarifado na lista de bancos de dados disponíveis no PostgreSQL. Isso confirma que a criação foi realizada com sucesso e que o ambiente está pronto para receber as tabelas e os registros da aplicação.
-![alt text](imagens\lista_de_banco_de_dados.png)
+
+![Lista de bancos de dados](imagens/lista_de_banco_de_dados.png)
 
 
 ### Conexão com Banco de Dados:
 Nesta etapa foi implementada a conexão da API com o banco de dados utilizando PHP e a biblioteca PDO. A conexão permite que a aplicação execute comandos SQL de forma segura, facilitando as operações de CRUD e o tratamento de possíveis erros durante o acesso ao banco de dados.
 
-![alt text](imagens\conectando_banco_de_dados.png)
+![Conexão com o banco de dados](imagens/conectando_banco_de_dados.png)
+
 
 Banco de Dados: **almoxarifado**
 
@@ -206,7 +205,7 @@ Lista todas as peças cadastradas.
 
 **Resposta:**
 
-![alt text](imagens\get.png)
+![Resultado do GET](imagens/get.png)
 
 ## 📦 Registros Inseridos
 Foram cadastradas entre 10 e 15 peças utilizando exclusivamente o método POST da API.
@@ -232,7 +231,8 @@ FROM pecas;
 ```
 Retorna a soma de todas as unidades armazenadas no almoxarifado.
 
-![alt text](imagens\1.png)
+![Consulta 1](imagens/1.png)
+
 
 2. Valor total do estoque
 ```sql
@@ -241,7 +241,8 @@ FROM pecas;
 ```
 Calcula o valor financeiro total do estoque considerando quantidade × preço unitário.
 
-![alt text](imagens\2.png)
+![Consulta 2](imagens/2.png)
+
 
 3. Peça mais cara
 ```sql
@@ -251,7 +252,8 @@ FROM pecas;
 Retorna o maior preço unitário cadastrado.
 
 
-![alt text](imagens\3.png)
+![Consulta 3](imagens/3.png)
+
 
 4. Peça mais barata
 ```sql
@@ -261,7 +263,7 @@ FROM pecas;
 Retorna o menor preço unitário cadastrado.
 
 
-![alt text](imagens\4.png)
+![Consulta 4](imagens/4.png)
 
 5. Média dos preços
 ```sql
@@ -270,7 +272,7 @@ FROM pecas;
 ```
 Calcula a média dos preços unitários com duas casas decimais.
 
-![alt text](imagens\5.png)
+![Consulta 5](imagens/5.png)
 
 
 6. Valor do estoque da categoria elétrica
@@ -282,7 +284,8 @@ WHERE categoria = 'eletrica';
 Calcula o valor total das peças pertencentes à categoria elétrica.
 
 
-![alt text](imagens\6.png)
+![Consulta 6](imagens/6.png)
+
 
 ## ✅ Funcionalidades
 - Cadastro de peças
